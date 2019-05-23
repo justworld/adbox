@@ -1,4 +1,4 @@
-# 23种设计模式汇总，python、C#实现
+# 23种设计模式汇总，python实现
 
 ## Creational Patterns: 创建型
 
