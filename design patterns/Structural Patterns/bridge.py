@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 桥接模式
 """
@@ -14,14 +13,12 @@ class Black:
         return 'black'
 
 
-
-
 class Pen:
     def __init__(self, color):
         self.color = color
 
     def draw(self):
-        print self.color.take_on()
+        print(self.color.take_on())
 
 
 if __name__ == '__main__':

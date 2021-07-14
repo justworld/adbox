@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 工厂方法模式
 """
@@ -32,4 +31,4 @@ def get_operation(a, b, opera_tpe):
 
 
 if __name__ == '__main__':
-    print get_operation(10, 10, 'add').get_result()
+    print(get_operation(10, 10, 'add').get_result())

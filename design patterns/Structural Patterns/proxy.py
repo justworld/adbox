@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 代理模式
 """
@@ -11,7 +10,7 @@ class Subject(object):
 
 class RealSubject(Subject):
     def request(self):
-        print "真实请求"
+        print("真实请求")
 
 
 class Proxy(Subject):

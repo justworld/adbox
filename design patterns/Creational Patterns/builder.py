@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 建造者模式
 """
@@ -31,8 +30,8 @@ class Car:
         self.price = 0
 
     def claim(self):
-        print 'this car is {} color and {} size, also has {} seats, only for sale {} yuan'.format(
-            self.color, self.size, self.seat, self.price)
+        print('this car is {} color and {} size, also has {} seats, only for sale {} yuan'.format(
+            self.color, self.size, self.seat, self.price))
 
 
 if __name__ == '__main__':

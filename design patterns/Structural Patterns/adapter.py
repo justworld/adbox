@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 适配器模式
 """
@@ -14,12 +13,12 @@ class Adapter:
 
 class Cat:
     def climb_tree(self):
-        print 'climb tree'
+        print('climb tree')
 
 
 class Dog:
     def climb_tree(self):
-        print 'just bark'
+        print('just bark')
 
 
 if __name__ == '__main__':

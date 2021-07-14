@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 观察者模式，参考消息队列中间件
 """
@@ -29,7 +28,7 @@ class Observer(object):
 
 class Observer1(Observer):
     def update(self):
-        print 'change!'
+        print('change!')
 
 
 if __name__ == '__main__':

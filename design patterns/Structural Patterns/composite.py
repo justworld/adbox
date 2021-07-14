@@ -1,11 +1,12 @@
-# coding: utf-8
 """
 和桥接模式很像，区别在于组合对象的性质
 """
 
+
 class File:
     def preview(self, deep=1):
-        print '-'*deep
+        print('-' * deep)
+
 
 class Folder:
     def __init__(self):
@@ -15,9 +16,10 @@ class Folder:
         self.childs.append(f)
 
     def preview(self, deep=1):
-        print '-'*deep
+        print('-' * deep)
         for i in self.childs:
-            i.preview(deep+2)
+            i.preview(deep + 2)
+
 
 if __name__ == '__main__':
     folder = Folder()

@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 状态模式
 """
@@ -6,7 +5,7 @@
 
 class State(object):
     def show(self):
-        print self.name
+        print(self.name)
 
 
 class StateOne(State):
@@ -36,6 +35,6 @@ class Host(object):
 if __name__ == '__main__':
     host = Host()
     actions = [host.show] + [host.toggle]
-    actions = actions*4
+    actions = actions * 4
     for action in actions:
         action()

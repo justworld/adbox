@@ -1,13 +1,11 @@
-# coding:utf8
-'''
+"""
 享元模式
-'''
+"""
 
 import weakref
 
 
 class Card(object):
-
     _CardPool = weakref.WeakValueDictionary()
 
     def __new__(cls, value, suit):

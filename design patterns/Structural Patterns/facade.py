@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 外观模式
 """
@@ -6,12 +5,12 @@
 
 class ModuleOne:
     def show(self):
-        print 'one'
+        print('one')
 
 
 class ModuleTwo:
     def show(self):
-        print 'two'
+        print('two')
 
 
 class Facade:

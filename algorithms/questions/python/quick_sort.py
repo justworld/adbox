@@ -1,3 +1,13 @@
+"""
+快速排序
+1960年由C. A. R. Hoare提出
+通过一趟排序将要排序的数据分割成独立的两部分，
+其中一部分的所有数据都比另外一部分的所有数据都要小，
+然后再按此方法对这两部分数据分别进行快速排序
+不稳定、空间复杂度o(nlogn), 最好和平均时间复杂度是O(nlogn),最坏时间复杂度是O(n2)
+"""
+
+
 def _quick_sort(sort_list, low, high):
     if low < high:
         # 基准值
@@ -18,13 +28,6 @@ def _quick_sort(sort_list, low, high):
 
 
 def quick_sort(sort_list):
-    """
-    1960年由C. A. R. Hoare提出
-    通过一趟排序将要排序的数据分割成独立的两部分，
-    其中一部分的所有数据都比另外一部分的所有数据都要小，
-    然后再按此方法对这两部分数据分别进行快速排序
-    最好和平均复杂度是O(nlogn),最坏复杂度是O(n2)
-    """
     if not sort_list:
         return sort_list
 
