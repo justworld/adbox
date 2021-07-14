@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 责任链模式
 """
@@ -9,7 +8,7 @@ class PlainObject:
         self.list = []
 
     def show(self):
-        print ','.join(self.list)
+        print(','.join(self.list))
 
 
 class BaseMiddleware(object):
@@ -41,8 +40,8 @@ def create_middleware_chain(middlewares):
     if length == 0:
         return None
 
-    for i in range(length-1):
-        middlewares[i].next = middlewares[i+1]
+    for i in range(length - 1):
+        middlewares[i].next = middlewares[i + 1]
 
     return middlewares[0]
 
