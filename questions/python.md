@@ -1,4 +1,4 @@
-- 实现带参数的装饰器
+- 实现带参数的函数装饰器
 ```
 def outer(*args, **kwargs):
     def wrap(func):
@@ -9,6 +9,8 @@ def outer(*args, **kwargs):
 
     return wrap
 ```
+- 装饰器有多少种
+
 - 进程、线程、协程  
 进程是资源分配的最小单位, 独立内存空间, 通信使用管道(Pipe)、命名管道(FIFO)、消息队列(Message Queue) 、信号、信号量(Semaphore) 、共享内存（Shared Memory）；套接字（Socket）  
 线程是操作系统调度（CPU调度）执行的最小单位, 共享进程内存，有独立的运行栈和程序计数器  
@@ -58,4 +60,5 @@ class Singleton(object):
         
         return cls._instance
 ```
+- wsgi要素
 
