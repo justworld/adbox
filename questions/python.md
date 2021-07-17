@@ -75,6 +75,10 @@ class Singleton(object):
         return cls._instance
 ```
 - wsgi要素
+server负责从客户端接收请求, 将request转发给application, 将application返回的response返回给客户端  
+application接收由server转发的request, 处理请求并将处理结果返回给server. application中可以包括多个栈式的中间件(middlewares), 这些中间件需要同时实现server与application. 因此可以在WSGI服务器与WSGI应用之间起调节作用: 对服务器来说, 中间件扮演应用程序, 对应用程序来说, 中间件扮演服务器
 - int实现原理, 占多少字节  
 内部使用int数组实现, 渐进式增长,  0, 1, 2^30-1, 2^30, 2^60-1, 2^60的字节大小: 24 28 28 32 32 36
+- 协程实现原理
+生成器
 
