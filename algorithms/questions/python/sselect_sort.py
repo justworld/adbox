@@ -17,7 +17,7 @@ def select_sort(l):
     for i in range(length):
         min = i
         for j in range(i + 1, length):
-            if l[j] < l[i]:
+            if l[j] < l[min]:
                 min = j
 
         l[min], l[i] = l[i], l[min]
